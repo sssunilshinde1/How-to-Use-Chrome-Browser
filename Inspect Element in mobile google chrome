@@ -1,0 +1,9 @@
+Inspect Element in mobile phone
+
+Method 2: Inspect Element Bookmarklet (No Computer Required)
+You can inject a lightweight inspector (like Eruda) directly into any mobile page using a bookmark. 
+Create a new bookmark in Chrome mobile.
+Edit the bookmark and change the name to "Inspect Element".
+Paste the following code into the URL field:
+javascript:(function () { var script = document.createElement('script'); script.src='//cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
+To use it: Visit any website, tap the address bar, type "Inspect Element," and select the bookmark you created. A gear icon will appear to open the inspector. 
